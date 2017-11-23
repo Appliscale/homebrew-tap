@@ -1,14 +1,14 @@
-# Appliscale Homebrew Taps
+# Appliscale Homebrew Tap
 
 This is a repository for Appliscale's brew formulas.For example to install *perun* formula you can
 either:
 
 ```
-brew install Appliscale/taps/perun
+brew install Appliscale/tap/perun
 ```
 or
 ```
-brew tap Appliscale/taps
+brew tap Appliscale/tap
 brew install perun
 ```
 
