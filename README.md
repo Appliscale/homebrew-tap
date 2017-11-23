@@ -14,4 +14,4 @@ brew install perun
 
 ## Current Formulas
 
-* Perun - A swiss army knife for AWS CloudFormation templates - validation, conversion, generators and other various stuff. [https://github.com/ppikula/perun](https://github.com/ppikula/perun)
+* Perun - A swiss army knife for AWS CloudFormation templates - validation, conversion, generators and other various stuff. [https://github.com/Appliscale/perun](https://github.com/Appliscale/perun)
