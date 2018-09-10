@@ -2,7 +2,7 @@ class Perun < Formula
   desc "Swiss army knife for AWS CloudFormation templates"
   homepage "https://github.com/Appliscale/perun"
   url "https://github.com/Appliscale/perun/archive/1.3.0.tar.gz"
-  sha256 "cdf194a27337326d25530c2fed2b48bf6c7a6b41be980f2f2a6d614f7f9b2142"
+  sha256 "1d891cf4febc9d29fa1bc26674468fcd6b62c02b44c05aa559f1b20f7685996c"
 
   depends_on "go" => :build
 
