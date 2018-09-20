@@ -1,4 +1,4 @@
-class Perun < Formula
+class Perundev < Formula
   require 'digest'
 
   desc "Swiss army knife for AWS CloudFormation templates"
