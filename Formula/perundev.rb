@@ -20,10 +20,10 @@ class Perundev < Formula
       system "make", "all"
     end
 
-    bin.install "bin/perun"
+    bin.install "bin/perun-darwin-amd64"
   end
 
   test do
-    system "#{bin}/perun", "--help"
+    system "#{bin}/perun-darwin-amd64", "--help"
   end
 end
