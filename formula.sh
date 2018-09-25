@@ -1,8 +1,13 @@
+#!/bin/bash
+wget https://github.com/Appliscale/perun/archive/$1.tar.gz
+sha=$(echo $1.tar.gz | sha256sum | awk '{print $1}')
+rm $1.tar.gz
+cat <<EOT > Formula/perundev.rb
 class Perundev < Formula
   desc "Swiss army knife for AWS CloudFormation templates"
   homepage "https://github.com/Appliscale/perun"
-  url "https://github.com/Appliscale/perun/archive/1.3.1.tar.gz"
-  sha256 "c6ce0c9f748a1d86b1ba8987937f5976e8632b1ea87a078d55b5316b01cf1258"
+  url "https://github.com/Appliscale/perun/archive/$1.tar.gz"
+  sha256 "$sha"
 
   depends_on "go" => :build
 
@@ -24,3 +29,4 @@ class Perundev < Formula
     system "#{bin}/perun", "--help"
   end
 end
+EOT
