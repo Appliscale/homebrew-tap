@@ -1,4 +1,4 @@
-class Perun < Formula
+class Perundev < Formula
   desc "Swiss army knife for AWS CloudFormation templates"
   homepage "https://github.com/Appliscale/perun"
   url "https://github.com/Appliscale/perun/archive/1.3.1.tar.gz"

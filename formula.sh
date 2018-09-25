@@ -2,8 +2,8 @@
 wget https://github.com/Appliscale/perun/archive/$1.tar.gz
 sha=$(echo $1.tar.gz | sha256sum | awk '{print $1}')
 rm $1.tar.gz
-cat <<EOT > perundev.rb
-class Perun < Formula
+cat <<EOT > Formula/perundev.rb
+class Perundev < Formula
   desc "Swiss army knife for AWS CloudFormation templates"
   homepage "https://github.com/Appliscale/perun"
   url "https://github.com/Appliscale/perun/archive/$1.tar.gz"
