@@ -1,6 +1,6 @@
 #!/bin/bash
 wget https://github.com/Appliscale/perun/archive/$1.tar.gz
-sha=$(echo $1.tar.gz | sha256sum | awk '{print $1}')
+sha=$(sha256sum $1.tar.gz | awk '{print $1}')
 rm $1.tar.gz
 cat <<EOT > Formula/perundev.rb
 class Perundev < Formula
